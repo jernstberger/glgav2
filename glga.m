@@ -1,7 +1,7 @@
 %  Jon M. Ernstberger
 %  LaGrange College
 % jernstberger@lagrange.edu
-%  11/20/2016
+%  11/28/2016
 %  glga.m
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %  Input-A struct that contains (or does not) the fields
