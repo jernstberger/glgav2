@@ -104,15 +104,13 @@ while generations<=maxGenerations & converge==0
     population=rankSorted(:,2:end);
 
     %Keep the chosen quantity for elitism purposes
-    Elite_few=population(1:elitism,:); 
+    Elite_few=population(1:elitism,:);
 
     if generations==restart_Iter & strcmp(restart,'on')
 	   %restart the iteration
-	     population(1:elitism,:)=Elite_few;
 	     population((elitism+1):end,:)=createPop(PopSize-elitism,NumVertices,NumEdges);
     else
       %perform elitism and mutation/crosover
-      population(1:elitism,:)=Elite_few;
       population((elitism+1):end,:)=gracefulCross(Elite_few,2);
     end;
 
